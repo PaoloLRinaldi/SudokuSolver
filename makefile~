@@ -1,0 +1,4 @@
+all: sudoku.exe
+
+sudoku.exe: sudoku.c
+	$(CC) -Wall -Wextra -ffast-math -O2 -o sudoku.exe sudoku.c -lm
